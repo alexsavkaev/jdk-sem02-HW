@@ -48,19 +48,9 @@ public class ServerWindow extends JFrame implements ServerView {
         btnStart = new JButton("Start");
         btnStop = new JButton("Stop");
 
-        btnStart.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                server.start();
-            }
-        });
+        btnStart.addActionListener(e -> server.start());
 
-        btnStop.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                server.stop();
-            }
-        });
+        btnStop.addActionListener(e -> server.stop());
 
         panel.add(btnStart);
         panel.add(btnStop);

@@ -6,8 +6,8 @@ import server.server.domain.Server;
 public class Client {
     private boolean connected;
     private String name;
-    private ClientView clientView;
-    private Server server;
+    private final ClientView clientView;
+    private final Server server;
 
     public Client(ClientView clientView, Server server) {
         this.clientView = clientView;

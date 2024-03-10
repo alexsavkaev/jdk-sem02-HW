@@ -9,9 +9,9 @@ import java.util.List;
 
 public class Server {
     private boolean work;
-    private ServerView serverView;
-    private List<Client> clientList;
-    private Repository repository;
+    private final ServerView serverView;
+    private final List<Client> clientList;
+    private final Repository repository;
 
     public Server(ServerView serverView, Repository repository) {
         this.serverView = serverView;

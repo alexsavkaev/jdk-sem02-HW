@@ -23,7 +23,7 @@ public class FileStorage implements Repository<String> {
         } catch (IOException e) {
             System.err.println("Произошла ошибка при чтении файла: " + e.getMessage());
         }
-        try (FileReader reader = new FileReader(LOG_PATH);){
+        try (FileReader reader = new FileReader(LOG_PATH)){
             int c;
             while ((c = reader.read()) != -1){
                 stringBuilder.append((char) c);
